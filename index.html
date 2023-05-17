@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./dist/style.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculate</title>
+</head>
+<body>
+    <div id="main" class="bg-slate-300  p-2 w-1/4 text-[1.8rem] cursor-pointer mx-auto mt-6 rounded-md">
+        <p id="display" class="bg-black text-white text-right p-2 rounded-sm">0</p>
+        <div id="buttons" class="grid grid-cols-4 gap-6 mt-3">
+            <span id="divide" class="bg-white text-center active:scale-90 transition-all duration-150  rounded-full hover:bg-green-400">/</span>
+            <span id="multiply" class="bg-white text-center active:scale-90 transition-all duration-150  rounded-full hover:bg-green-400">*</span>
+            <span id="minus" class="bg-white text-center active:scale-90 transition-all duration-150  rounded-full hover:bg-green-400">-</span>
+            <span id="plus" class="bg-white text-center active:scale-90 transition-all duration-150  rounded-full hover:bg-green-400">+</span>
+            
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400" data-input="7">7</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400" data-input="8">8</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150rounded-full rounded-full hover:bg-green-400" data-input="9">9</span>
+            <span id="clear" class="bg-white text-center active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400">c</span>
+            
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400" data-input="4">4</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400" data-input="5">5</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400" data-input="6">6</span>
+            <span id="root" class="bg-white text-center active:scale-90 transition-all duration-150 rounded-full hover:bg-green-400">v</span>
+        
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150  rounded-full hover:bg-green-400" data-input="1">1</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 active:scale-90 transition-all duration-150  rounded-full hover:bg-green-400" data-input="2">2</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 rounded-full active:scale-90 transition-all duration-150 hover:bg-green-400" data-input="3">3</span>
+            <span id="square" class="bg-white text-center rounded-full active:scale-90 transition-all duration-150 hover:bg-green-400"><i>x <sup><small>2</small></sup></i></span>
+            
+            <span class="btn-number bg-blue-500 text-white text-center px-3 rounded-full active:scale-90 transition-all duration-150 hover:bg-green-400" data-input="0">0</span>
+            <span class="btn-number bg-blue-500 text-white text-center px-3 rounded-full active:scale-90 transition-all duration-150 hover:bg-green-400" data-input=".">.</span>
+            <span id="backspace" class="bg-white text-center rounded-full active:scale-90 transition-all duration-150 hover:bg-green-400"><=</span>
+            <span id="equal" class="bg-white text-center rounded-full active:scale-90 transition-all duration-150 hover:bg-green-400">=</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
